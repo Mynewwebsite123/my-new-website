@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Meri Pehli Website</title>
+    <style>
+    body {
+        background-color: lightblue;
+        font-family: Arial, sans-serif;
+        text-align: center;
+        padding-top: 50px;
+    }
+
+    h1 {
+        color: darkblue;
+        font-size: 40px;
+    }
+
+    h2 {
+        color: darkred;
+    }
+
+    p {
+        font-size: 20px;
+        color: #333333;
+    }
+    /* Heading Animation */
+.hero h1 {
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+/* Paragraph Animation */
+.hero p {
+    animation: fadeIn 2s ease-in-out;
+}
+
+/* Button Animation */
+.btn {
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px #38bdf8;
+}
+
+/* Fade In Effect */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.services {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.services h2 {
+    color: #38bdf8;
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: #1e293b;
+    padding: 30px 20px;
+    border-radius: 15px;
+    width: 280px;
+    border: 1px solid #334155;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    border-color: #38bdf8;
+    box-shadow: 0 0 20px #38bdf855;
+}
+
+.card h3 {
+    color: #38bdf8;
+    margin-bottom: 15px;
+}
+
+.card p {
+    color: #cbd5e1;
+    line-height: 1.6;
+}
+.contact {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.contact h2 {
+    color: #38bdf8;
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.contact > p {
+    color: #cbd5e1;
+    margin-bottom: 25px;
+}
+
+#contactForm {
+    max-width: 450px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#contactForm input,
+#contactForm textarea {
+    padding: 15px;
+    border: 1px solid #334155;
+    border-radius: 8px;
+    background: #1e293b;
+    color: white;
+    font-size: 16px;
+}
+
+#contactForm textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+#contactForm .btn {
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#formStatus {
+    margin-top: 20px;
+    color: #38bdf8;
+}
+</style>
+</head>
+<body>
+
+    <h1>Namaste! Welcome to My Website</h1>
+
+    <p>Main coding seekh raha hoon.</p>
+
+    <h2>Mera Pehla Project</h2>
+
+    <p>Ye meri pehli website hai.</p>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My Modern Website</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #0f172a;
+            color: white;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 8%;
+            background: #111827;
+        }
+
+        nav h2 {
+            color: #38bdf8;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+        }
+
+        .hero {
+            min-height: 80vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 30px 20px;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+
+        .hero h1 span {
+            color: #38bdf8;
+        }
+
+        .hero p {
+            color: #cbd5e1;
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+
+        .btn {
+            background: #38bdf8;
+            color: #0f172a;
+            padding: 14px 28px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: #7dd3fc;
+            transform: translateY(-3px);
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: #94a3b8;
+        }
+
+        @media (max-width: 600px) {
+            .hero h1 {
+                font-size: 34px;
+            }
+
+            nav {
+                padding: 20px;
+            }
+
+            nav a {
+                margin-left: 8px;
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <h2>MyWebsite</h2>
+
+        <div>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+    <section class="hero" id="home">
+        <h1>Welcome to <span>My Website</span></h1>
+
+        <p>I am learning coding and building something amazing!</p>
+
+        <a href="#about" class="btn">Explore More</a>
+    </section>
+
+    <section id="about" style="text-align:center; padding:40px 20px;">
+        <h2>About My Website</h2>
+        <p style="margin-top:15px; color:#cbd5e1;">
+            This is my first modern website built with HTML and CSS.
+        </p>
+    </section>
+<section class="services">
+    <h2>What I Am Learning</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>💻 Web Development</h3>
+            <p>I am learning to build websites using HTML and CSS.</p>
+        </div>
+
+        <div class="card">
+            <h3>🎨 Web Design</h3>
+            <p>I am learning to create beautiful website designs.</p>
+        </div>
+
+        <div class="card">
+            <h3>🚀 My Projects</h3>
+            <p>This is my first website project.</p>
+        </div>
+
+    </div>
+</section>
+
+   <section id="contact" class="contact">
+    <h2>Contact Me</h2>
+
+    <p>Have a question? Send me a message!</p>
+
+    <form id="contactForm">
+        <input
+            type="text"
+            id="name"
+            placeholder="Enter your name"
+            required
+        >
+
+        <input
+            type="email"
+            id="email"
+            placeholder="Enter your email"
+            required
+        >
+
+        <textarea
+            id="message"
+            placeholder="Write your message"
+            required
+        ></textarea>
+
+        <button type="submit" class="btn">
+            Send Message
+        </button>
+    </form>
+
+    <p id="formStatus"></p>
+</section>
+
+    <footer>
+        <p>© 2026 MyWebsite | Made by Me</p>
+    </footer>
+
+    <script>
+    const form = document.getElementById("contactForm");
+    const status = document.getElementById("formStatus");
+
+    form.addEventListener("submit", function(event) {
+        event.preventDefault();
+
+        const name = document.getElementById("name").value;
+
+        status.textContent =
+            "Thank you, " + name + "! Your form is working.";
+
+        form.reset();
+    });
+</script>
+</body>
+</html>
